@@ -29,5 +29,21 @@ public class LeapYear {
             }
         }
     }
+
+    /** determine whether the year is leap year. it will return true if the year is leap year. 
+     *@source cs61b 
+     */
+    public static boolean isLeapYear(int year)
+    {
+	    if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0))
+	    {
+		    return true;
+	    }
+	    else
+	    {
+		    return false;
+	    }
+    }
+
 }
 
